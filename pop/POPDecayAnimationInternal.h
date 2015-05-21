@@ -14,10 +14,10 @@
 #import "POPPropertyAnimationInternal.h"
 
 // minimal velocity factor before decay animation is considered complete, in units / s
-static CGFloat kPOPAnimationDecayMinimalVelocityFactor = 5.;
+static CGFloat kPOPAnimationDecayMinimalVelocityFactor = 5.0f;
 
 // default decay animation deceleration
-static CGFloat kPOPAnimationDecayDecelerationDefault = 0.998;
+static CGFloat kPOPAnimationDecayDecelerationDefault = 0.998f;
 
 static void decay_position(CGFloat *x, CGFloat *v, NSUInteger count, CFTimeInterval dt, CGFloat deceleration)
 {
